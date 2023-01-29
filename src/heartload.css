@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import "./webfontkit-valentine/stylesheet.css";
+
+body {
+    background: #212121;
+    color: #F97DC4;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+svg path.linear-1 {
+
+    stroke: white;
+    filter: url(#blur-filter);
+}
+
+.loading {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.loading svg {
+    height: 100%;
+}
+
+.loading .linear-1 {
+    stroke-dasharray: 281;
+    -webkit-animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+    stroke-dasharray: 300;
+    -webkit-animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+    stroke-dasharray: 340;
+    -webkit-animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+    stroke-dasharray: 400;
+    -webkit-animation: dash 3s infinite linear forwards;
+}
+
+/*Animation*/
+@keyframes dash {
+    from {
+        stroke-dashoffset: 814;
+    }
+
+    to {
+        stroke-dashoffset: -814;
+    }
+}
+
+.happyval {
+    font-family: 'catrina_demoregular';
+    color: #ff04ff;
+    text-shadow: rgb(255, 236, 249) 0px 0px 5px, rgb(243, 151, 255) 0px 0px 10px, rgba(255, 255, 255, 0.075) 0px 0px 15px, #FF2D95 0px 0px 20px, #ff7abdb0 0px 0px 30px, #bd83ff31 0px 0px 40px, #ff2d9600 0px 0px 50px, #ff2d961f 0px 0px 75px;   
+     font-size: 395%;
+    letter-spacing: 6px;        
+    word-spacing: 3.6px;
+    font-variant: small-caps;
+}
+
+a,
+.from {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E21393;
+}
